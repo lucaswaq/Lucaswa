@@ -496,7 +496,96 @@
   .modal-content { min-width: 95vw; padding: 18px 5vw; }
   .historial-table th, .historial-table td { font-size: 0.9em; }
 }
-    /* === FIN ACTUALIZACIÓN === */
+    /* ==== NUEVOS COLORES PARA XANFARM ==== */
+
+/* 1. Botones menú inferior: Balance y Retiros */
+.menu-btn,
+#retirosBtn,
+#convertirAGFBtn,
+#pedirRetiroBtn {
+  background: linear-gradient(90deg, #7ec850 60%, #4a7e2d 100%);
+  color: #fff !important;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px #4a7e2d44;
+  transition: background 0.17s, color 0.17s;
+}
+.menu-btn:hover,
+#retirosBtn:hover,
+#convertirAGFBtn:hover,
+#pedirRetiroBtn:hover {
+  background: linear-gradient(90deg, #62a337 60%, #275325 100%);
+  color: #ffd700 !important;
+}
+
+/* 2. Títulos principales */
+#pantallaPrincipal h1,
+.modal-content h2,
+.perfil-fondo h2 {
+  color: #42652d !important;
+  text-shadow: 0 2px 10px #fff8, 0 1px 0 #adc27e;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+/* 3. Pantalla de inicio: mejora contraste y legibilidad */
+#pantallaPrincipal,
+#pantallaPrincipal span,
+#pantallaPrincipal > div,
+#contadorProduccion {
+  color: #2d3122 !important;
+  text-shadow: 0 1px 5px #fff8;
+}
+
+/* 4. Modal de perfil: fondo oscuro, texto claro */
+.perfil-fondo {
+  background: linear-gradient(135deg, #6dbd7a 65%, #eaf6e2 100%) !important;
+  color: #183b13 !important;
+  border: 2.5px solid #3777ca;
+  box-shadow: 0 0 25px #3777ca55;
+}
+.perfil-fondo .perfil-avatar img {
+  border: 3px solid #fffda2 !important;
+  box-shadow: 0 0 14px #adc27e88 !important;
+}
+.gamer-rango {
+  background: linear-gradient(90deg, #e6e24c 10%, #7ec850 60%, #e6e24c 90%);
+  color: #2d3122 !important;
+  border: 2px solid #7ec850 !important;
+  text-shadow: 0 1px 6px #fff9, 0 0 7px #adc27e66;
+}
+
+/* 5. Extra: resalta btn recolectar */
+#btnRecolectar {
+  background: linear-gradient(90deg, #f6be3e 60%, #c2a43e 100%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px #c2a43e44;
+}
+#btnRecolectar:hover {
+  background: linear-gradient(90deg, #d19d21 60%, #847200 100%);
+  color: #fffbe7;
+}
+
+/* 6. Extra: mejora titulos secundarios */
+.modal-content h3,
+.modal-content strong {
+  color: #3777ca !important;
+}
+
+/* 7. Si algún botón secundario queda blanco, fuerza color campestre */
+.menu button:not(.menu-btn) {
+  background: #eaf6e2;
+  color: #42652d;
+  border: 1.5px solid #c2e7b0;
+}
+.menu button:not(.menu-btn):hover {
+  background: #c2e7b0;
+  color: #183b13;
+}
+
+/* ==== FIN NUEVOS COLORES ==== */
   </style>
 </head>
 <body>
